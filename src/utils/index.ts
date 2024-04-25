@@ -1,1 +1,1 @@
-export * from './inquirer';
+export * from './inquirer'

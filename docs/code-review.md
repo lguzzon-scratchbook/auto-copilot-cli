@@ -12,6 +12,7 @@ Perform code review and suggest improvements
 
 Need to be in a git repository
 If you want some files not to be checked, then add to .gitignore
+
 ```bash
 # Code review
 $ copilot code-review

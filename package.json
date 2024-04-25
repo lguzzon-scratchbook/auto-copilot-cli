@@ -6,65 +6,55 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix",
+    "lint:fix": "prettier --write . ; npx -y @biomejs/biome check --apply . ; eslint . --ext .ts --fix",
     "pretty": "prettier --write ."
   },
   "bin": {
     "auto-copilot-cli": "cli.js",
     "copilot": "cli.js"
   },
-  "files": [
-    "dist",
-    "cli.js",
-    "README.md",
-    "config.json",
-    "demo"
-  ],
+  "files": ["dist", "cli.js", "README.md", "config.json", "demo"],
   "author": "Rustam Saryev",
   "license": "ISC",
   "devDependencies": {
-    "@types/cli-table": "^0.3.1",
-    "@types/inquirer": "^9.0.3",
-    "@types/node": "^18.16.3",
-    "@typescript-eslint/eslint-plugin": "^5.59.2",
-    "@typescript-eslint/parser": "^5.59.2",
-    "eslint": "^8.39.0",
-    "eslint-plugin-import": "^2.27.5",
-    "prettier": "^2.8.8",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "@types/cli-table": "^0.3.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@dqbd/tiktoken": "^1.0.7",
+    "@dqbd/tiktoken": "^1.0.14",
     "ai-validator": "^1.0.76",
     "ajv": "^8.12.0",
-    "axios": "^1.4.0",
-    "chalk": "^4.1.2",
+    "axios": "^1.6.8",
+    "chalk": "^5.3.0",
     "cli-table": "^0.3.11",
-    "commander": "^10.0.1",
+    "commander": "^12.0.0",
     "directory-tree": "^3.5.1",
-    "hnswlib-node": "^1.4.2",
-    "inquirer": "^8.2.5",
-    "langchain": "^0.0.94",
-    "openai": "^3.2.1",
-    "ora": "^5.4.1",
-    "semver": "^7.5.0",
-    "simple-git": "^3.18.0",
-    "typeorm": "^0.3.15",
-    "winston": "^3.8.2"
+    "hnswlib-node": "^3.0.0",
+    "inquirer": "^9.2.19",
+    "langchain": "^0.1.36",
+    "openai": "^4.38.5",
+    "ora": "^8.0.1",
+    "semver": "^7.6.0",
+    "simple-git": "^3.24.0",
+    "typeorm": "^0.3.20",
+    "winston": "^3.13.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rsaryev/auto-copilot-cli.git"
   },
-  "keywords": [
-    "copilot",
-    "cli",
-    "chatgpt",
-    "openai"
-  ],
+  "keywords": ["copilot", "cli", "chatgpt", "openai"],
   "bugs": {
     "url": "https://github.com/rsaryev/auto-copilot-cli/issues"
   },
-  "homepage": "https://github.com/rsaryev/auto-copilot-cli#readme"
+  "homepage": "https://github.com/rsaryev/auto-copilot-cli#readme",
+  "packageManager": "pnpm@9.0.2+sha256.d6fc013639b81658ff175829ebb9435bcb89eff206769e460fd3ae27c2054df6"
 }

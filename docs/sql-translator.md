@@ -17,7 +17,7 @@ $ copilot sql-translator "get all last posts of users"
 # Translate natural language to SQL with output
 $ copilot sql-translator "get all last posts of users"
 
-# Translate natural language to SQL with output and sql 
+# Translate natural language to SQL with output and sql
 $ copilot sql-translator "get all last posts of users" -s ./schema.sql
 
 # Translate natural language to SQL with output and prisma schema

@@ -28,6 +28,7 @@ copilot config PACKAGE_MANAGER brew
 ```
 
 Get Config
+
 ```bash
 # Print config
 $ copilot get-config

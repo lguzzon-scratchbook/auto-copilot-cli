@@ -19,17 +19,18 @@
 - Shell command generation and execution
 - Natural language to SQL translation
 
-
 ## Setup
 
 1. Install `auto-copilot-cli` globally:
-    ```bash
+
+   ```bash
    # using npm
-    npm install -g auto-copilot-cli
-   
+   npm install -g auto-copilot-cli
+
    # using install script
    curl -s https://raw.githubusercontent.com/rsaryev/auto-copilot-cli/main/deployment/deploy.bash | bash
-    ```
+   ```
+
 2. Get an API key from [OpenAI](https://platform.openai.com/account/api-keys).
 3. Refer to the [CLI usage](https://github.com/rsaryev/auto-copilot-cli/tree/main/docs) guide to learn how to use
    the tool.
@@ -37,28 +38,28 @@
 ### Commands
 
 - `code-chat <path>` - AI chat with codebase [usage](https://github.com/rsaryev/auto-copilot-cli/blob/main/docs/code-chat.md)
-    - Options:
-        - `-p, --prompt <prompt>` - Prompt for AI
+  - Options:
+    - `-p, --prompt <prompt>` - Prompt for AI
 - `code-review` - Perform code review [usage](https://github.com/rsaryev/auto-copilot-cli/blob/main/docs/code-review.md) - Perform code review
 - `test <file>` - Generate test [usage](https://github.com/rsaryev/auto-copilot-cli/blob/main/docs/test.md)
-    - Options:
-        - `-p, --prompt <prompt>` - Prompt for AI
-        - `-o, --output <file>` - Output file
+  - Options:
+    - `-p, --prompt <prompt>` - Prompt for AI
+    - `-o, --output <file>` - Output file
 - `refactor <file>` - Refactor code [usage](https://github.com/rsaryev/auto-copilot-cli/blob/main/docs/refactor.md)
-    - Options:
-        - `-p, --prompt <prompt>` - Prompt for AI
-        - `-o, --output <file>` - Output file
+  - Options:
+    - `-p, --prompt <prompt>` - Prompt for AI
+    - `-o, --output <file>` - Output file
 - `sql-translator <query>` - Translate natural language to SQL [usage](https://github.com/rsaryev/auto-copilot-cli/blob/main/docs/sql-translator.md)
-    - Options:
-        - `-o, --output <output>` - Output sql file
-        - `-s, --schema-path <schemaPath>` - Path to schema file (sql, prisma, any format)
+  - Options:
+    - `-o, --output <output>` - Output sql file
+    - `-s, --schema-path <schemaPath>` - Path to schema file (sql, prisma, any format)
 - `chat <chat>` - Chat with AI [usage](https://github.com/rsaryev/auto-copilot-cli/blob/main/docs/chat.md)
-    - Options:
-        - `-p, --prompt <prompt>` - Prompt for AI
+  - Options:
+    - `-p, --prompt <prompt>` - Prompt for AI
 - `shell <goal>` - Generate and execute a shell command [usage](https://github.com/rsaryev/auto-copilot-cli/blob/main/docs/shell.md)
 - `pre-commit` - Analyze git diff and generate a commit message [usage](https://github.com/rsaryev/auto-copilot-cli/blob/main/docs/pre-commit.md)
-    - Options:
-        - `-y, --yes` - Skip confirmation
+  - Options:
+    - `-y, --yes` - Skip confirmation
 - `config <key> <value>` - Set configuration [usage](https://github.com/rsaryev/auto-copilot-cli/blob/main/docs/config.md)
 - `get-config` - Print configuration
 
@@ -66,7 +67,6 @@
 
 - `-h, --help` - Display help for command
 - `-V, --version` - Output the version number
-
 
 ## Contributing
 
